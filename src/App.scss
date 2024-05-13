@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(202, 220, 236);
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 700px;
+  height: 600px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .box {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:nth-of-type(1) {
+      border-right: 1px solid #ccc;
+    }
+
+    h1 {
+      color: rgb(49, 49, 160);
+    }
+
+    .itemTxt {
+      color: #bbb;
+    }
+
+    img {
+      width: auto;
+      height: 170px;
+    }
+
+    .Win {
+      color: rgb(71, 160, 71);
+    }
+
+    .Lose {
+      color: rgb(250, 84, 84);
+    }
+
+    .Tie {
+      color: black;
+    }
+  }
+
+  button {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+    &:nth-of-type(1) {
+      background: url("./assets/scissors.png") center/80px auto no-repeat;
+    }
+    &:nth-of-type(2) {
+      background: url("./assets/rock.png") center/80px auto no-repeat;
+    }
+    &:nth-of-type(3) {
+      background: url("./assets/paper.png") center/80px auto no-repeat;
+    }
+    &:hover,
+    &:focus {
+      background-color: rgb(202, 220, 236);
+      border: 1px solid rgb(202, 220, 236);
+    }
+  }
+}
